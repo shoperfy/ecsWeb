@@ -25,3 +25,13 @@ function animate() {
 
 animate();
 
+/*
+
+{
+        "imports": {
+          "three": "https://unpkg.com/three@v0.161.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@v0.161.0/examples/jsm/"
+        }
+      }
+
+*/
