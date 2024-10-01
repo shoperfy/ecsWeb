@@ -1,0 +1,183 @@
+body {
+    font-family: "Roboto Mono", monospace;
+    color: white;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+/*header stuff*/
+
+.head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    top: 0;
+}
+
+.head a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+#home {
+    margin-left: 0.5rem;
+    justify-content: none;
+    margin-right: auto;
+    font-size: 1.5rem;
+} 
+
+.head img {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.25rem;
+}
+
+
+.head ul {
+    display: flex;
+    gap: 2rem;
+    padding-right: 1.5rem;
+    list-style: none;
+}
+
+
+.head nav {
+    margin-left: auto;
+}
+
+/*footer stuff*/
+
+.foot {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 0;
+}
+
+
+/* main stuff */
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 1.5rem;
+}
+
+main div {
+    margin-top: 2rem;
+    margin-bottom: 2rem; 
+}
+
+main * {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem; 
+}
+
+
+/*back stuff*/
+
+#back {
+    display: flex;
+    margin-bottom: 1rem;
+    margin-left: -7.5%;
+    filter: brightness(50%);
+}
+
+#back a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+#back img {
+    width: 1.5rem;
+    height: auto;
+    margin-right: 0.25rem;
+}
+
+#back figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*project stuff*/
+
+.project img {
+    width: 60%;
+    height: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.project figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project h1 {
+    font-size: 3rem;
+}
+
+
+
+.project a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    border: solid 2px white;
+    border-radius: 5px;
+    display: flex; /* Add this line */
+    align-items: center;
+    justify-content: center;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    width:fit-content;
+    height: 2.5rem;
+}
+
+.project a:hover {
+    filter: invert(1);
+}
+
+.project nav img {
+    width: 1.5rem;
+    height: auto;
+    margin-right: 0.25rem;
+}
+
+.project nav {
+    margin-top: 1.5rem;
+}
+
+
+/*info stuff*/
+
+.info {
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 768px){
+    .head {
+        font-size: 0.8rem;
+    }
+
+    .head nav ul {
+        gap: 0.75rem;
+    }
+    
+}

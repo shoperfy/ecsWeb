@@ -1,0 +1,147 @@
+body {
+    font-family: "Roboto Mono", monospace;
+    color: white;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1 {
+    font-size: larger;
+}
+/*header stuff*/
+
+.head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    top: 0;
+}
+
+.head a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+#home {
+    margin-left: 0.5rem;
+    justify-content: none;
+    margin-right: auto;
+    font-size: 1.5rem;
+} 
+
+.head img {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.25rem;
+}
+
+
+.head ul {
+    display: flex;
+    gap: 2rem;
+    padding-right: 1.5rem;
+    list-style: none;
+}
+
+
+.head nav {
+    margin-left: auto;
+}
+
+
+
+/* main stuff */
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+main div {
+    margin-top: 2rem;
+    margin-bottom: 2rem; 
+}
+
+main * {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem; 
+}
+
+/* article stuff */
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 100%;
+}
+
+/* section stuff */
+
+section {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem;
+    border-top: 2px solid white;
+    width: 100%;
+}
+
+section h2 {
+    font-size: 1.5rem;
+}
+
+section .date {
+    margin-left: auto;
+    text-align: right;
+}
+
+input[type="submit"], .edit {
+    color: white;
+    cursor: pointer;
+    background-color: black;
+    border: solid 2px white;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-family: "Roboto Mono", monospace;
+}
+
+input[type="submit"]:hover {
+    filter: invert(1);
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+@media screen and (max-width: 768px){
+    .head {
+        font-size: 0.8rem;
+    }
+
+    .head nav ul {
+        gap: 0.75rem;
+    }
+}

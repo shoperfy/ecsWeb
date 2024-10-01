@@ -1,0 +1,367 @@
+body {
+    font-family: "Roboto Mono", monospace;
+    color: white;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*header stuff*/
+
+.head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    top: 0;
+}
+
+.head a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+#home {
+    margin-left: 0.5rem;
+    justify-content: none;
+    margin-right: auto;
+    font-size: 1.5rem;
+} 
+
+.head img {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.25rem;
+}
+
+
+.head ul {
+    display: flex;
+    gap: 2rem;
+    padding-right: 1.5rem;
+    list-style: none;
+}
+
+
+.head nav {
+    margin-left: auto;
+}
+
+/*hello stuff*/
+
+.hello {
+    font-weight:450;
+    font-size: 2.5rem;
+    margin-bottom: auto;
+}
+
+
+
+/*footer stuff*/
+
+.foot {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: -5rem;
+}
+
+/* contact stuff */
+
+.contact img {
+    width: 1.5rem;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    position: relative;
+    bottom: 0;
+    
+}
+
+.contact ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.contact div {
+    display: flex;
+    align-items: center;
+    min-width: auto;
+    height: 40px;
+    padding: 5px;
+}
+
+.contact li {
+    display: flex;
+    align-items: center;
+    min-width: auto;
+    height: 40px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color: black;
+}
+
+
+.contact li a {
+    text-decoration: none;
+    color: white;
+}
+
+.contact li img {
+    margin-right: 0.5rem;
+        
+}
+
+.contact li:hover {
+    filter: invert(1);
+}
+
+
+
+/*about me stuff*/
+
+
+.me {
+    display: flex;
+    margin-top: 3rem;
+    font-size: 1.25rem;
+}
+
+.meColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fig1 #brendon {
+    width: 75%;
+    height: auto;
+    margin-left: 2rem;
+    padding:0;
+    margin:0;
+}
+
+
+.fig1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+/* main stuff */
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+main div {
+    margin-top: 2rem;
+    margin-bottom: 2rem; 
+}
+
+main * {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem; 
+}
+
+/*info stuff*/
+
+.info {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+}
+
+/*skills stuff*/
+
+
+.skills {
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 49%;
+}
+
+
+.skills img {
+    width: 50px;
+    height: auto;
+    margin-right: 5px;
+}
+
+.skills ul{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: 0.1fr repeat(2, 1fr);
+gap: 0.5rem;
+list-style: none;
+justify-content: space-between;
+grid-template-areas: 
+        'h1 h1 h1'
+        'java python html'
+        'css js cpp';
+}
+
+.skills li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+}
+
+.skills h1 { 
+    grid-area: h1;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+#java { grid-area: java; }
+#python { grid-area: python; }
+#html { grid-area: html; }
+#css { grid-area: css; }
+#js { grid-area: js; }
+#cpp { grid-area: cpp; }
+
+/*hobbies stuff*/
+
+.hobbies {
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 49%;
+}
+
+
+.hobbies img {
+    width: 50px;
+    height: auto;
+    margin-right: 5px;
+}
+
+.hobbies ul{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: 0.1fr repeat(2, 1fr);
+gap: 0.5rem;
+list-style: none;
+justify-content: space-between;
+grid-template-areas: 
+        'h1 h1 h1'
+        'programming gaming cooking'
+        'keyboards fashion hating';
+}
+
+.hobbies li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+}
+
+.hobbies h1 { 
+    grid-area: h1;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+#programming { grid-area: programming; }
+#gaming { grid-area: gaming; }
+#cooking { grid-area: cooking; }
+#keyboards { grid-area: keyboards; }
+#fashion { grid-area: fashion; }
+#hating { grid-area: hating; }
+
+/*media queries*/
+
+@media screen and (max-width: 768px) {
+    .hobbies, .skills {
+        width: 100%;
+    }
+
+    .me {
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills ul  {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+            'h1 h1'
+            'java python'
+            'html css'
+            'js cpp';
+    }
+
+    .hobbies ul  {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+            'h1 h1'
+            'programming gaming'
+            'cooking fashion'
+            'keyboards hating';
+    }
+
+    .hobbies li {
+        font-size: 1rem;
+    }
+
+    .skills li {
+        font-size: 1rem;
+    }
+
+    .hobbies img {
+        width: 30px;
+    }
+
+    .skills img {
+        width: 30px;
+    }
+
+    .contact ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .head {
+        font-size: 0.8rem;
+    }
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .hobbies, .skills {
+        width: 100%;
+    }
+
+    .head {
+        font-size: 0.8rem;
+    }
+
+    .head nav ul {
+        gap: 0.75rem;
+    }
+}
